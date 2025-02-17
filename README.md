@@ -1,4 +1,4 @@
-# Guess My Number Game
+# Guess My Number Game !
 
 A simple number guessing game built with HTML, CSS, and JavaScript.
 
