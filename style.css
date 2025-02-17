@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+/* Global Styles */
+* {
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+  box-sizing: inherit; /* Inherit box-sizing from html */
+}
+
+html {
+  font-size: 62.5%; /* Set base font size (1rem = 10px for easy calculations) */
+  box-sizing: border-box; /* Ensures width & height include padding and border */
+}
+
+body {
+  font-family: "Press Start 2P", sans-serif; /* Set game-like pixel font */
+  color: #eee; /* Light text color */
+  background-color: #222; /* Dark background color */
+}
+
+/* Layout Styling */
+header {
+  position: relative; /* Allows absolute positioning for child elements */
+  height: 35vh; /* Header occupies 35% of viewport height */
+  border-bottom: 7px solid #eee; /* Thick border at the bottom */
+}
+
+main {
+  height: 65vh; /* Main section takes up the remaining 65% of viewport */
+  display: flex; /* Enables flexbox for alignment */
+  align-items: center; /* Vertically centers content */
+  justify-content: space-around; /* Distributes elements evenly */
+}
+
+/* Left and Right Section Styling */
+.left {
+  width: 52rem; /* Fixed width for the left section */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
+
+.right {
+  width: 52rem; /* Fixed width for the right section */
+  font-size: 2rem; /* Larger font size for better readability */
+}
+
+/* Header Title Styling */
+h1 {
+  font-size: 4rem; /* Large title font size */
+  text-align: center; /* Center align text */
+  position: absolute;
+  width: 100%; /* Full width */
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the title */
+}
+
+/* Number Display (Hidden or Revealed Guess) */
+.number {
+  background: #eee; /* Light background for number display */
+  color: #333; /* Dark text color */
+  font-size: 6rem; /* Large font size */
+  width: 15rem; /* Fixed width */
+  padding: 3rem 0; /* Padding for better appearance */
+  text-align: center; /* Center text */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%); /* Center horizontally */
+}
+
+/* Number Range Indicator */
+.between {
+  font-size: 1.4rem; /* Smaller text size */
+  position: absolute;
+  top: 2rem;
+  right: 2rem; /* Positioned at the top right corner */
+}
+
+/* "Again" Button Styling */
+.again {
+  position: absolute;
+  top: 2rem;
+  left: 2rem; /* Positioned at the top left corner */
+}
+
+/* Input Field for User Guess */
+.guess {
+  background: none; /* Transparent background */
+  border: 4px solid #eee; /* White border */
+  font-family: inherit; /* Use the same font as the body */
+  color: inherit; /* Inherit text color */
+  font-size: 5rem; /* Large input field font */
+  padding: 2.5rem; /* Padding for better spacing */
+  width: 25rem; /* Fixed width */
+  text-align: center; /* Center align text */
+  margin-bottom: 3rem; /* Space below input field */
+}
+
+/* Button Styling */
+.btn {
+  border: none;
+  background-color: #eee; /* Light background color */
+  color: #222; /* Dark text color */
+  font-size: 2rem; /* Button text size */
+  padding: 2rem 3rem; /* Padding for better appearance */
+  cursor: pointer; /* Indicate interactivity */
+}
+
+.btn:hover {
+  background-color: #ccc; /* Slightly darker shade on hover */
+}
+
+/* Message Display Styling */
+.message {
+  margin-bottom: 8rem; /* Spacing below message */
+  height: 3rem; /* Fixed height to prevent shifting */
+}
+
+/* Score Label Styling */
+.label-score {
+  margin-bottom: 2rem; /* Space below score label */
+}
+
+/* Timer Label Styling */
+.label-timer {
+  margin-top: 2rem; /* Space above timer */
+  font-size: 2rem; /* Medium font size */
+  color: yellow; /* Highlight timer in yellow */
+}
+
+/* Difficulty Selector Dropdown */
+.difficulty {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%); /* Center the dropdown */
+  padding: 0.5rem 1rem; /* Padding for better appearance */
+  font-family: inherit; /* Use consistent font */
+  background: #eee; /* Light background */
+  border: none; /* No border */
+}

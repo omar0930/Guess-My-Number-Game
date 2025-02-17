@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess My Number!</title>
+  </head>
+  <body>
+    <header>
+      <!-- Game Title -->
+      <h1>Guess My Number!</h1>
+
+      <!-- Number range indicator (updated dynamically based on difficulty) -->
+      <p class="between">(Between 1 and 20)</p>
+
+      <!-- Button to restart the game -->
+      <button class="btn again">Again!</button>
+
+      <!-- Box displaying the secret number (hidden at first) -->
+      <div class="number">?</div>
+
+      <!-- Difficulty selection dropdown -->
+      <select class="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </header>
+
+    <main>
+      <!-- Left section: User input and check button -->
+      <section class="left">
+        <!-- Input field for user's guess -->
+        <input type="number" class="guess" />
+        <!-- Button to check the entered guess -->
+        <button class="btn check">Check!</button>
+      </section>
+
+      <!-- Right section: Game status and feedback -->
+      <section class="right">
+        <!-- Displays game messages like "Too high!" or "Correct!" -->
+        <p class="message">Start guessing...</p>
+
+        <!-- Displays the current score -->
+        <p class="label-score">💯 Score: <span class="score">20</span></p>
+
+        <!-- Displays the highscore -->
+        <p class="label-highscore">
+          🥇 Highscore: <span class="highscore">0</span>
+        </p>
+
+        <!-- Displays the remaining time -->
+        <p class="label-timer">⏳ Time left: <span class="time">30</span>s</p>
+      </section>
+    </main>
+
+    <!-- JavaScript file that controls game logic -->
+    <script src="script.js"></script>
+  </body>
+</html>
