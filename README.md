@@ -3,12 +3,12 @@
 A simple number guessing game built with HTML, CSS, and JavaScript.
 
 ## Features
-- Random number generation with difficulty levels (Easy, Medium, Hard)
-- Score tracking and high score functionality
-- User-friendly UI with interactive messages
-- Responsive design
-- Restart game functionality
-- Animations for winning and incorrect guesses
+- Random number generation with difficulty levels (Easy, Medium, Hard).
+- Score tracking and high score functionality.
+- User-friendly UI with interactive messages.
+- Responsive design.
+- Restart game functionality.
+- Animations for winning and incorrect guesses.
 
 ## How to Play
 1. Select a difficulty level (Easy, Medium, Hard) from the dropdown menu.
